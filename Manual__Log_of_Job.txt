@@ -21,7 +21,7 @@ c) Sometimes the button '>|' remains disabled.
 -------------------------------------------------------------------------------------------------------------------------------------------
 (A.1) Nozzle is  ... wherever the nozzle is ...
 -------------------------------------------------------------------------------------------------------------------------------------------
-      PROMPT: Move nozzle N1 to Safe-Z at ((91.407430, 122.850946, 0.001000, 90.016085 mm)).
+      PROMPT: Move nozzle N1 to Safe-Z at ((91.407430, 122.850946, 0.000000, 90.016085 mm)).           .... now   , 42.000000, 89.981408 mm)). 
    PYTHON-53: 'moveto   Z0.0000  F1000'
               'pick 0'
 >|
@@ -37,33 +37,33 @@ c) Sometimes the button '>|' remains disabled.
                           >
                           Need to press '||' ... with the hoover text "Pause processing of the job" to return to the step-mode
                           ||
-      PROMPT: Move to safe Z at ((91.407430, 122.850946, 0.001000, 90.016085 mm)).
+      PROMPT: Move to safe Z at ((91.407430, 122.850946, 0.001000, 90.016085 mm)).                       .... now   , 42.000000, 89.981408 mm)). 
 >|
-      PROMPT: Move to pick location, safe Z at ((62.393000, 53.902000, 0.000000, 270.000000 mm)).
+      PROMPT: Move to pick location, safe Z at ((62.393000, 53.902000, 0.000000, 270.000000 mm)).        .... no change on Z ... stays at 0.0
 >|
-      PROMPT: Move to pick location Z at ((62.393000, 53.902000, 0.000000, 270.000000 mm)).
-   PYTHON-54: 'moveto X93.5930 Y52.6020  E-90.0000 F1000'
+      PROMPT: Move to pick location Z at ((62.393000, 53.902000, 0.000000, 270.000000 mm)).              .... no change on Z ... stays at 0.0
+   PYTHON-54: 'moveto X93.5930 Y52.6020  E-90.0000 F1000'  
               'gxyz 52.602 93.593 0'
 >|
-      PROMPT: Request part pick at ((62.393000, 53.902000, 0.000000, 270.000000 mm)).
+      PROMPT: Request part pick at ((62.393000, 53.902000, 0.000000, 270.000000 mm)).                    .... no change on Z ... stays at 0.0
 >|
-      PROMPT: Move to safe Z at ((62.393000, 53.902000, 0.000000, -90.000000 mm)).
-   PYTHON-55: 'pick'
+      PROMPT: Move to safe Z at ((62.393000, 53.902000, 0.000000, -90.000000 mm)).                       .... no change on Z ... stays at 0.0
+   PYTHON-55: 'pick'  
               'pump 1'
 >|
       PROMPT: Perform bottom vision
 >|
-      PROMPT: Move to placement location, safe Z at ((93.947430, 122.851659, 001000, 90.016085 mm)).
+      PROMPT: Move to placement location, safe Z at ((93.947430, 122.851659, 0.001000, 90.016085 mm)).    .... no change on Z ... stays at 0.001
 >|
-      PROMPT: Move to placement location Z at ((93.947430, 122.851659, 0.001000, 90.016085 mm)).
+      PROMPT: Move to placement location Z at ((93.947430, 122.851659, 0.001000, 90.016085 mm)).          .... no change on Z ... stays at 0.001
    PYTHON-56: 'moveto X125.1474 Y121.5517  E90.0161 F1000'
               'gxyz 121.552 125.147 0'
 >|
-      PROMPT: Request part place. at (X 93,947, Y 122,852, Z 0,001, C 90,016).
+      PROMPT: Request part place. at (X 93,947, Y 122,852, Z 0,001, C 90,016).                            .... no change on Z ... stays at 0,001
    PYTHON-57: 'moveto   Z0.0010  F1000'
               'pick 0'
 >|
-      PROMPT: Move to safe Z at ((93.947430, 122.851659, 0.001000, 90.016085 mm)).
+      PROMPT: Move to safe Z at ((93.947430, 122.851659, 0.001000, 90.016085 mm)).                        .... no change on Z ... stays at 0.001
    PYTHON-58: 'place'
               'pump 0'
 >|
