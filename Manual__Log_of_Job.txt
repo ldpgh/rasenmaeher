@@ -1,3 +1,16 @@
+Issues:
+a) Z = 0.0 vs. 0.001 ... no clear where the definition of 0.001 comes from
+                     ... found in machine.xml just      <safe-z value="0.0" units="Millimeters"/>
+
+b) need Z-variation to move the nozzle up and down ... could not recognize yet z-values for "nozzle down" === "pick 0"
+   OpenPnP pick"-command   !=   "pick 0" (it's my machine command for nozzle up)
+
+c) Sometimes the button '>|' remains disabled.
+   Seems to happen at different steps.
+
+
+
+
       PROMPT: Move to placement location, safe Z at ((91.407430, 122.850946, 0.001000, 90.016085mm)).
 >|
       PROMPT: Move to placement Z at ((91.407430, 122.850946, 0.001000, 90.016085mm)).
@@ -12,20 +25,39 @@
    PYTHON-52: 'place'
               'pump 0'
 >|
+
 -------------------------------------------------------------------------------------------------------------------------------------------
-Nozzle is  ... wherever the nozzle is ...
+(A.0) Stopped and started again
+-------------------------------------------------------------------------------------------------------------------------------------------
+>|
+      PROMPT: Move head H1 to Safe-Z
+>|
+      PROMPT: Check fiducials
+>|
+-------------------------------------------------------------------------------------------------------------------------------------------
+(A.1) Nozzle is  ... wherever the nozzle is ...
 -------------------------------------------------------------------------------------------------------------------------------------------
       PROMPT: Move nozzle N1 to Safe-Z at ((91.407430, 122.850946, 0.001000, 90.016085 mm)).
    PYTHON-53: 'moveto   Z0.0000  F1000'
               'pick 0'
 >|
       PROMPT: Request part feed from feeder MyStripFeeder1.
->|
+                (a.1) seems to be issued twice     or
+                          >|
+                                PROMPT: Request part feed from feeder MyStripFeeder1.
+                (a2.) seems to have an issue
+                          >|
+                          Problem ... '>|' ... remains disabled !!!!
+                          Need to press '>' ... with the hoover text  "Resume processing of the job"
+                          ATTENTION ... button seems to need time to return to get enabled again
+                          >
+                          Need to press '||' ... with the hoover text "Pause processing of the job" to return to the step-mode
+                          ||
       PROMPT: Move to safe Z at ((91.407430, 122.850946, 0.001000, 90.016085 mm)).
 >|
-      PROMPT: Move to pick location, safe Z at ((62.393000, 0.000000, 270.000000 mm)).
+      PROMPT: Move to pick location, safe Z at ((62.393000, 53.902000, 0.000000, 270.000000 mm)).
 >|
-      PROMPT: Move to pick location Z at ((62.393000, 0.000000, 270.000000 mm)).          REMARK: unknown whether 53.902000 was at Pos. 2 or not
+      PROMPT: Move to pick location Z at ((62.393000, 53.902000, 0.000000, 270.000000 mm)).
    PYTHON-54: 'moveto X93.5930 Y52.6020  E-90.0000 F1000'
               'gxyz 52.602 93.593 0'
 >|
@@ -34,9 +66,6 @@ Nozzle is  ... wherever the nozzle is ...
       PROMPT: Move to safe Z at ((62.393000, 53.902000, 0.000000, -90.000000 mm)).
    PYTHON-55: 'pick'
               'pump 1'
-Problem ... '>|' ... remains disabled !!!!
-Need to press '>' ... with the hoover text  "Resume processing of the job"
-ATTENTION ... button seems to need time to return to get enabled again
 >|
       PROMPT: Perform bottom vision
 >|
@@ -55,7 +84,7 @@ ATTENTION ... button seems to need time to return to get enabled again
               'pump 0'
 >|
 -------------------------------------------------------------------------------------------------------------------------------------------
-Nozzle is still above the last place-location
+(A.2) Nozzle is still above the last place-location ... seems one complete cycle is from (A.1) to (A.2)
 -------------------------------------------------------------------------------------------------------------------------------------------
       PROMPT: Move nozzle N1 to Safe-Z at ((93.947430, 122.851659, 0.000000, 90.016085 mm)).
    PYTHON-59: 'moveto   Z0.0000  F1000'
@@ -63,7 +92,4 @@ Nozzle is still above the last place-location
 >|
       PROMPT: Request part feed from feeder MyStripFeeder1.
 >|
-Problem ... '>|' ... remains disabled !!!!
-Need to press '>' ... with the hoover text  "Resume processing of the job"
->
-Need to press '||' ... with the hoover text "Pause processing of the job"
+.....
