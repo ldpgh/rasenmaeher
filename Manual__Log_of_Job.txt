@@ -2,32 +2,16 @@ Issues:
 a) Z = 0.0 vs. 0.001 ... no clear where the definition of 0.001 comes from
                      ... found in machine.xml just      <safe-z value="0.0" units="Millimeters"/>
 
-b) need Z-variation to move the nozzle up and down ... could not recognize yet z-values for "nozzle down" === "pick 0"
-   OpenPnP pick"-command   !=   "pick 0" (it's my machine command for nozzle up)
+b) need Z-variation to move the nozzle up and down ... could not recognize yet z-values for "nozzle down" === "pick 1"
+   OpenPnP pick-command   !=   "pick 0" respective "pick 1" (machine-commands for nozzle-down respective nozzle-up)
 
 c) Sometimes the button '>|' remains disabled.
-   Seems to happen at different steps.
+   Seems to happen at different steps ... not sure at this point.
 
 
-
-
-      PROMPT: Move to placement location, safe Z at ((91.407430, 122.850946, 0.001000, 90.016085mm)).
->|
-      PROMPT: Move to placement Z at ((91.407430, 122.850946, 0.001000, 90.016085mm)).
-   PYTHON-50: 'moveto X122.6074 Y121.5509  E90.0161 F1000'
-              'gxyz 121.551 122.607 0'
->|
-      PROMPT: Request part place. at (X 91,407, Y 122,851, Z 0,001, C 90,016).            REMARK: really commas within the numbers !!!
-   PYTHON-51: 'moveto   Z0.0010  F1000'
-              'pick 0'
->|
-      PROMPT: Move to safe Z at ((91.407430, 122.850946, 0.001000, 90.016085 mm)).
-   PYTHON-52: 'place'
-              'pump 0'
->|
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-(A.0) Stopped and started again
+(A.0) Stopped prev. job using the red-square button , started again using '>|'
 -------------------------------------------------------------------------------------------------------------------------------------------
 >|
       PROMPT: Move head H1 to Safe-Z
