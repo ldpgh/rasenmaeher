@@ -9,19 +9,20 @@ cams=[]
 imgs=[]
 
 for ii in range(len(cam)):
+  print ii
   try:
     vc=VideoCapture(ii)
+    print ii, "... found camera ...", vc
+    print ii, vc.get(CAP_PROP_FRAME_WIDTH), vc.get(CAP_PROP_FRAME_HEIGHT)
+    vc.set(CAP_PROP_FRAME_WIDTH, 320) ; vc.set(CAP_PROP_FRAME_HEIGHT, 200)
     if vc.isOpened():
-      print ii, "FOUND camera ...", vc
-      vc.set(CAP_PROP_FRAME_WIDTH, 240) #320)
-      vc.set(CAP_PROP_FRAME_HEIGHT, 160) #240)
       print vc.get(CAP_PROP_FRAME_WIDTH), vc.get(CAP_PROP_FRAME_HEIGHT)
       cams.append(vc)
     else:
       print ii, "... can't open"
   except:
     cam[ii]=None
-    print ii, "... Exception passed"
+    print ii, "Exception passed"
 
 axis=1  # if all have same height
 axis=0  # if all have same width
