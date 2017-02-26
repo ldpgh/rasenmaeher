@@ -7,13 +7,31 @@
                   <nozzle-tips>
                      <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="e092921a-2eef-449b-b340-aa3f40d8d791" name="NT1" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
-                        <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-                        <changer-mid-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-                        <changer-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                        <changer-start-location units="Millimeters" x="13.667" y="225.146" z="0.0" rotation="0.0"/>
+                        <changer-mid-location units="Millimeters" x="13.479" y="207.288" z="0.0" rotation="0.0"/>
+                        <changer-end-location units="Millimeters" x="13.479" y="207.288" z="42.0" rotation="0.0"/>
+                     </nozzle-tip>
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="e092921a-2eef-449b-b340-aa3f40d8d792" name="NT2" allow-incompatible-packages="true">
+                        <compatible-package-ids class="java.util.HashSet"/>
+                        <changer-start-location units="Millimeters" x="49.867" y="225.346" z="0.0" rotation="0.0"/>
+                        <changer-mid-location units="Millimeters" x="49.567" y="207.288" z="0.0" rotation="0.0"/>
+                        <changer-end-location units="Millimeters" x="49.567" y="207.288" z="42.0" rotation="0.0"/>
+                     </nozzle-tip>
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="e092921a-2eef-449b-b340-aa3f40d8d793" name="NT3" allow-incompatible-packages="true">
+                        <compatible-package-ids class="java.util.HashSet"/>
+                        <changer-start-location units="Millimeters" x="85.549" y="225.738" z="0.0" rotation="0.0"/>
+                        <changer-mid-location units="Millimeters" x="85.549" y="207.288" z="0.0" rotation="0.0"/>
+                        <changer-end-location units="Millimeters" x="85.549" y="207.288" z="42.0" rotation="0.0"/>
+                     </nozzle-tip>
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="e092921a-2eef-449b-b340-aa3f40d8d794" name="NT4" allow-incompatible-packages="true">
+                        <compatible-package-ids class="java.util.HashSet"/>
+                        <changer-start-location units="Millimeters" x="121.567" y="225.946" z="0.0" rotation="0.0"/>
+                        <changer-mid-location units="Millimeters" x="121.567" y="207.288" z="0.0" rotation="0.0"/>
+                        <changer-end-location units="Millimeters" x="121.567" y="207.288" z="42.0" rotation="0.0"/>
                      </nozzle-tip>
                   </nozzle-tips>
-                  <head-offsets units="Millimeters" x="-31.2" y="1.3" z="0.0" rotation="0.0"/>
-                  <safe-z value="42" units="Millimeters"/>
+                  <head-offsets units="Millimeters" x="-31.03" y="0.228" z="0.0" rotation="0.0"/>
+                  <safe-z value="42.0" units="Millimeters"/>
                </nozzle>
             </nozzles>
             <actuators>
@@ -24,7 +42,7 @@
             </actuators>
             <cameras>
                <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="d09a16de-b95c-4d1c-b6fe-99c52b4cc4ba" name="OpenCvCamera" looking="Down" settle-time-ms="250" rotation="90.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" device-index="0" preferred-width="0" preferred-height="0">
-                  <units-per-pixel units="Millimeters" x="0.05" y="0.051" z="0.0" rotation="0.0"/>
+                  <units-per-pixel units="Millimeters" x="0.052" y="0.052" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
@@ -99,10 +117,94 @@
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="cf5ba27d-16cb-4f2f-9c7d-a750648559f1" name="MyStripFeeder1" enabled="true" part-id="R0805-1K" tape-type="WhitePaper" vision-enabled="false" feed-count="3">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="cf5ba27d-16cb-4f2f-9c7d-a750648559f1" name="MyStripFeeder1" enabled="false" part-id="R0805-1K" tape-type="WhitePaper" vision-enabled="false" feed-count="7">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="84.393" y="57.402" z="0.0" rotation="1.4000714263916016"/>
-            <last-hole-location units="Millimeters" x="80.393" y="57.402" z="0.0" rotation="1.4000714263916016"/>
+            <reference-hole-location units="Millimeters" x="128.342" y="46.007" z="0.0" rotation="1.4000714263916016"/>
+            <last-hole-location units="Millimeters" x="124.34" y="46.0" z="0.0" rotation="1.4000714263916016"/>
+            <part-pitch value="3.975" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="8b68f3db-e94a-4378-9d44-4765846eccb1" name="MyStripFeeder2" enabled="false" part-id="R0805-33" tape-type="WhitePaper" vision-enabled="false" feed-count="25">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="128.237" y="56.91" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="124.182" y="56.899" z="0.0" rotation="0.0"/>
+            <part-pitch value="3.98" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="c7827d47-9171-4ade-8ab2-decfceb87df1" name="X_StripFeeder_10" enabled="true" part-id="RESC2012N-100R" tape-type="WhitePaper" vision-enabled="false" feed-count="1">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="128.064" y="56.446" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="96.051" y="56.56" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="11499fa8-6f79-432e-bd54-9822a477f1cc" name="X_StripFeeder_11" enabled="true" part-id="LED2012N_GREEN-LED" tape-type="BlackPlastic" vision-enabled="false" feed-count="1">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="84.035" y="56.71" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="80.035" y="56.71" z="0.0" rotation="0.0"/>
+            <part-pitch value="2.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="440511c0-00db-4e52-879e-703cb4f687e9" name="X_StripFeeder_12" enabled="true" part-id="LED2012N_YELLOW-LED" tape-type="BlackPlastic" vision-enabled="false" feed-count="2">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="31.962" y="56.695" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="19.942" y="56.654" z="0.0" rotation="0.0"/>
+            <part-pitch value="2.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="8175313f-c70b-4a4b-a3c3-d3d01b47cfc4" name="X_StripFeeder_20" enabled="true" part-id="RESC2012N-10k" tape-type="WhitePaper" vision-enabled="false" feed-count="1">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="127.808" y="45.617" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="68.053" y="45.964" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="6c4d5a04-5df6-4abb-b2d3-ad02e0770e7a" name="X_StripFeeder_30" enabled="true" part-id="CAPC2012N-100n" tape-type="WhitePaper" vision-enabled="false" feed-count="4">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="127.719" y="34.573" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="60.009" y="34.941" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="eb9cd576-c484-421f-be75-7cb195e81cb4" name="X_StripFeeder_40" enabled="true" part-id="RESC2012N-1k" tape-type="WhitePaper" vision-enabled="false" feed-count="7">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="127.631" y="23.65" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="67.795" y="23.997" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="a4bff8f3-e78f-4e6c-80aa-0df1debd36df" name="X_StripFeeder_50" enabled="true" part-id="RESC2012N-33R" tape-type="WhitePaper" vision-enabled="false" feed-count="22">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="127.44" y="12.703" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="15.874" y="13.326" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="8d45ba8f-7375-4e69-9d62-610f34458742" name="Y_StripFeeder_10" enabled="true" part-id="CAPC2012N-100u" tape-type="ClearPlastic" vision-enabled="false" feed-count="3">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="34.597" y="70.352" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="34.873" y="114.237" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="592d16a8-1142-4a61-83e1-678e4c3725ff" name="Y_StripFeeder_20" enabled="true" part-id="LED2012N_YELLOW-LED-90deg" tape-type="BlackPlastic" vision-enabled="false" feed-count="2">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="23.553" y="70.199" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="23.43" y="86.245" z="0.0" rotation="0.0"/>
+            <part-pitch value="2.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="326a5f17-7f00-4e76-a7e6-668d4b37c11e" name="Y_StripFeeder_30" enabled="true" part-id="CAPC2012N-100n-90deg" tape-type="WhitePaper" vision-enabled="false" feed-count="2">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="12.614" y="70.393" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="12.941" y="102.149" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="e592e670-3bde-43b0-a24e-fcede95aaf88" name="Y_StripFeeder_40" enabled="true" part-id="INDC2012N-FERRIT" tape-type="WhitePaper" vision-enabled="false" feed-count="1">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="1.736" y="70.599" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="2.022" y="102.499" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
          </feeder>
