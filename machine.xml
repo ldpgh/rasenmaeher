@@ -314,7 +314,7 @@
             <text><![CDATA[home]]></text>
          </command>
          <command type="MOVE_TO_COMMAND">
-            <text><![CDATA[moveto {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:E%.4f} {FeedRate:F%.0f}]]></text>
+            <text><![CDATA[moveto {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:E%.4f}]]></text>
          </command>
          <command type="PICK_COMMAND">
             <text><![CDATA[pick]]></text>
@@ -336,24 +336,13 @@
             </axis>
             <axis name="z" type="Z" home-coordinate="0.0">
                <head-mountable-ids class="java.util.HashSet">
-                  <string>N1</string>
-                  <string>N2</string>
+                  <string>*</string>
                </head-mountable-ids>
-               <transform class="org.openpnp.machine.reference.driver.GcodeDriver$CamTransform" cam-radius="58.0" cam-wheel-radius="0.0" cam-wheel-gap="0.0">
-                  <negated-head-mountable-id>N2</negated-head-mountable-id>
-               </transform>
             </axis>
             <axis name="c1" type="Rotation" home-coordinate="0.0">
                <head-mountable-ids class="java.util.HashSet">
-                  <string>N1</string>
+                  <string>*</string>
                </head-mountable-ids>
-               <pre-move-command>T0</pre-move-command>
-            </axis>
-            <axis name="c2" type="Rotation" home-coordinate="0.0">
-               <head-mountable-ids class="java.util.HashSet">
-                  <string>N2</string>
-               </head-mountable-ids>
-               <pre-move-command>T1</pre-move-command>
             </axis>
          </axes>
       </driver>
